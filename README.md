@@ -12,10 +12,11 @@ automatically.
 1. In BRAT, remove `AndrewBroz/obsidian-inkling` from the beta plugin list.
 2. **Add beta plugin** → `AndrewBroz/obsidian-inkling-beta`.
 
-List only one of the two repositories in BRAT. Both install the same plugin id, so with both listed
-BRAT keeps replacing one channel's build with the other's.
+List only one of the two repositories in BRAT. Both install the same plugin id, and BRAT only ever
+updates to a newer version, so with both listed you'd silently stay on whichever build is newest.
 
 ## Leaving the beta
 
 Remove `AndrewBroz/obsidian-inkling-beta` from BRAT and add `AndrewBroz/obsidian-inkling` again.
-You'll stay on the beta build until the next stable release is newer than it.
+Adding a repository installs its latest release straight away, so this moves you back to the current
+stable build, even though it is older than the beta you had.
